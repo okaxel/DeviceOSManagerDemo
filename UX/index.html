@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>aFrame</title>
+        <meta charset="UTF-8"> 
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index,follow">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div class="app-head">
+            <div class="app-head-title">Autoware based Device OS management tool</div> 
+            <div class="app-head-subtitle">user experience demonstration</div> 
+        </div>
+        <div class="app-content">
+            <div class="app-content-box" id="mainMenu">
+                <div class="app-content-title">Main menu</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('newProject');">New project</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('loadProject');">Load</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('saveProject');">Save</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('editProject');">Edit</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('testProject');">Test</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('buildProject');">Build</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('deployProject');">Deploy</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('publishProject');">Publish</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('createReports');">Create reports</div>
+            </div>
+            <div class="app-content-box" id="newProject">
+                <div class="app-content-title">Create new project</div>
+                <div class="app-content-instruction">Please select the project type to create</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('setNodes');">Autonomous Smart Device</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('setNodes');">Space Exploration Device</div>
+                <div class="app-content-btn app-content-btn-main app-content-btn-disabled">Vehicle</div>
+            </div>
+            <div class="app-content-box" id="setNodes">
+                <div class="app-content-title">Node structure</div>
+                <div class="app-content-instruction">Please select the node structure of the project</div>
+                <div class="app-content-section">Single-node setup</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('editProject');">Standalone device</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('editProject');">Guided device</div>
+                <div class="app-content-section app-content-section-border">Multi-node setup</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('editProject');">Uniformly cooperating devices</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('editProject');">Complementary cooperation of devices</div>
+                <div class="app-content-btn app-content-btn-main" onclick="activateBox('editProject');">Complex cooperation devices</div>
+            </div>
+            <div class="app-content-box" id="">
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+            <div class="app-content-box" id="">
+                
+            </div>
+        </div>
+        <div class="app-status"></div>
+        <script src="./main.js"></script>
+    </body>
+</html>
